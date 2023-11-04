@@ -24,7 +24,9 @@ Fonts are separated by a | */
   --nav-hover-link-color: white;
   --nav-hover-background-color: #81290E;
 }
-
+.content{
+  max-width: 500px;
+}
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
@@ -38,7 +40,6 @@ body {
 img {
   display: block;
   margin: 0 auto;
-  max-width: 500px;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
