@@ -206,6 +206,48 @@ footer .social img{
     margin: 200px 0;
 }
 
+/* Subpages */
+.contact-card{
+    display: flex; /* Use flexbox layout */
+    justify-content: space-evenly; /* Space between the child elements */
+    align-items: center; /* Align items vertically */
+    margin-bottom: -150px;
+}
+.contact-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.price-info {
+    text-align: left; /* Aligns the text to the left */
+    color: #044271; /* Dark blue color for the text */
+    width: 30%;
+}
+.contact-card section{
+    text-align: left;
+}
+
+.contact-info {
+    text-align: center; /* Aligns the text to the left */
+    color: #044271; /* Dark blue color for the text */
+}
+
+.contact-info h3 {
+    color: #1E9DA8;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: .075em;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+.price-info h4{
+    text-decoration: underline;
+}
+.image-container{
+    display: flex;
+    flex-direction: column;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
@@ -214,6 +256,13 @@ footer .social img{
     }
     nav, footer {
         flex-direction: column;
+    }
+    .contact-card{
+        flex-direction: column;
+    }
+    .price-pic{
+        max-width: 50%;
+        margin-bottom: 30%;
     }
     nav a {
         display: block;
