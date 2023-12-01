@@ -4,31 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drinks</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="drinks.css">
 </head>
 <body>
     <header>
         <ul>
-            <div>
-                <img src="logo.png" alt="logo" class="logo">
-            </div>
-            <div>
+            <li><img src="logo.png" alt="logo" class="logo"> </li>
+            <li>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="drinks.html">Drinks</a></li>
                     <li><a href="snacks.html">Snacks</a></li>
                 </ul>
-            </div>
-            <div>
-                &#128222
-            </div>
+            </li>
+            <li>
+                <a href="tel:928-718-8879"><div class="phone">&#128222;</div></a>
+            </li>
         </ul>
-        <div>
-            <h1>Drinks</h1>
-            <img src="./images/drinks.webp" alt="drinks">
+        <div class="hero-container">
+            <img class='hero' src="./images/drinks.webp" alt="">
         </div>
     </header>
     <main>
+        <h2>Car Wash Deals</h2>
+<div class="buttoncontainer">
+    <button id="myBtn">Learn More</button>
+</div>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Basic Car Wash: $6.00</p>
+    <p>Deluxe Car Wash: $8.00</p>
+    <p>Super Car Wash: $10.00</p>
+    <p>Ultimate Car Wash: $12.00</p>
+  </div>
+
+</div>
         <section>
             From refreshing sodas and bottled water to a wide array of energy drinks, coffee, and tea, we offer beverages for every occasion. Whether you're starting your day and need a caffeine kick or simply want something cold and fizzy, our drinks menu has something for everyone. We also stock a selection of alcoholic beverages for those seeking a little indulgence. Don't forget to check out our fountain drinks for customizable and budget-friendly refreshments. With our drinks options, you can keep hydrated and energized during your journey
         </section>
@@ -152,6 +166,22 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
 </body>
 </html>
-<!-- Future add Javascript to hide the unactive choices and display the active  -->
