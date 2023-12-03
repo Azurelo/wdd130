@@ -23,16 +23,17 @@
         </ul>
         <div class="hero-container">
             <img class='hero' src="./images/drinks.webp" alt="">
+            <h3 class="page-title">Drinks</h3>
         </div>
     </header>
     <main>
-        <h2>Car Wash Deals</h2>
+        <!-- <h2>Car Wash Deals</h2>
 <div class="buttoncontainer">
     <button id="myBtn">Learn More</button>
-</div>
+</div> -->
 
 <!-- Modal -->
-<div id="myModal" class="modal">
+<!-- <div id="myModal" class="modal">
 
   <div class="modal-content">
     <span class="close">&times;</span>
@@ -40,134 +41,98 @@
     <p>Deluxe Car Wash: $8.00</p>
     <p>Super Car Wash: $10.00</p>
     <p>Ultimate Car Wash: $12.00</p>
-  </div>
+  </div> -->
 
-</div>
-        <section>
-            From refreshing sodas and bottled water to a wide array of energy drinks, coffee, and tea, we offer beverages for every occasion. Whether you're starting your day and need a caffeine kick or simply want something cold and fizzy, our drinks menu has something for everyone. We also stock a selection of alcoholic beverages for those seeking a little indulgence. Don't forget to check out our fountain drinks for customizable and budget-friendly refreshments. With our drinks options, you can keep hydrated and energized during your journey
+<!-- </div> -->
+        <section class="info">
+            <h2>Info</h2>
+           <p> From refreshing sodas and bottled water to a wide array of energy drinks, coffee, and tea, we offer beverages for every occasion. Whether you're starting your day and need a caffeine kick or simply want something cold and fizzy, our drinks menu has something for everyone. We also stock a selection of alcoholic beverages for those seeking a little indulgence. Don't forget to check out our fountain drinks for customizable and budget-friendly refreshments. With our drinks options, you can keep hydrated and energized during your journey</p>
         </section>
         <section>
             <h2>Soda</h2>
-            <div>
-            <div><img src="./images/coke.jpg" alt="coke"></div>
-            <div><img src="./images/pepsi.jpg" alt=""></div>
-            <div><img src="./images/squirt.jpg" alt=""></div>
-            <div><img src="./images/drp.jpg" alt=""></div>
+            <div class="sodas">
+            <div><img src="./images/coke.jpg" alt="coke" onclick="showSelected('coke')"></div>
+            <div><img src="./images/pepsi.jpg" alt="pepsi" onclick="showSelected('pepsi')"></div>
+            <div><img src="./images/squirt.jpg" alt="squirt" onclick="showSelected('squirt')"></div>
+            <div><img src="./images/drp.jpg" alt="drp" onclick="showSelected('drp')"></div>
             </div>
-            <div class="selected">
+            <div id="cokeSelected" class="selected">
                 <img src="images/coke.jpg" alt="">
                 <ul>
-                    Coke Flavors
-                    <li>
-                        Diet
-                    </li>
-                    <li>
-                        Cherry
-                    </li>
-                    <li>
-                        Zero
-                    </li>
-                    <li>
-                        Vanilla
-                    </li>
+                    <li>Coke Flavors:</li>
+                    <li> Diet</li>
+                    <li> Cherry</li>
+                    <li> Zero</li>
+                    <li> Vanilla </li>
                 </ul>
             </div>
-            <div class="selected">
+            <div id="pepsiSelected" class="selected">
                 <img src="./images/pepsi.jpg" alt="">
-                <ul>
-                    Pepsi Flavors
-                    <li>
-                        Diet
-                    </li>
-                    <li>
-                        Wild Cherry
-                    </li>
-                    <li>
-                        Zero
-                    </li>
+                <ul> 
+                    <li>Pepsi Flavors:</li>
+                    <li> Diet </li>
+                    <li> Wild Cherry </li>
+                    <li> Zero</li>
                 </ul>
             </div>
-            <div class="selected">
+            <div id="squirtSelected" class="selected">
                 <img src="./images/squirt.jpg" alt="">
                 <ul>
-                    Squirt Flavors
-                    <li>
-                        Ruby Red
-                    </li>
+                    <li>Squirt Flavors:</li>
+                    <li>Ruby Red</li>
+                    <li>Zero Sugar</li>
                 </ul>
             </div>
-            <div class="selected">
+            <div id="drpSelected" class="selected">
                 <img src="./images/drp.jpg" alt="">
-                <ul>
-                    Dr. Pepper Flavors
-                    <li>
-                        Cream Soda
-                    </li>
-                    <li>
-                        Diet
-                    </li>
+                <ul> <li>Dr. Pepper Flavors:</li>
+                    <li> Cream Soda</li>
+                    <li>Diet</li>
                 </ul>
             </div>
         </section>
         <section>
             <h2>Energy Drinks</h2>
-            <div>
-            <div><img src="./images/monster.jpg" alt="monster"></div>
-            <div><img src="./images/rockstar.jpg" alt=""></div>
+            <div class="sodas">
+            <div><img src="./images/monster.jpg" alt="monster" onclick="showSelected('monster')"></div>
+            <div><img src="./images/rockstar.jpg" alt="rockstar" onclick="showSelected('rs')"></div>
             </div>
-            <div class="selected">
+            <div id="monsterSelected" class="selected">
                 <img src="images/monster.jpg" alt="">
                 <ul>
-                    Monster Flavors
-                    <li>
-                        Ultra Rosa
-                    </li>
-                    <li>
-                        Ultra Gold
-                    </li>
-                    <li>
-                        Nitro
-                    </li>
-                    <li>
-                        Import
-                    </li>
+                    <li>Monster Flavors:</li>
+                    <li>Ultra Rosa</li>
+                    <li>Ultra Gold</li>
+                    <li>Nitro</li>
+                    <li>Import</li>
                 </ul>
             </div>
-            <div class="selected">
+            <div id="rsSelected" class="selected">
                 <img src="./images/rockstar.jpg" alt="">
                 <ul>
-                    Rockstar Flavors
-                    <li>
-                        Zero Carb
-                    </li>
-                    <li>
-                        Orange Recovery
-                    </li>
-                    <li>
-                        Lemonade Recovery
-                    </li>
+                    <li>Rockstar Flavors</li>
+                    <li> Zero Carb</li>
+                    <li>  Orange Recovery</li>
+                    <li> Lemonade Recovery </li>
                 </ul>
             </div>
-
         </section>
     </main>
     <footer>
-        <div>Haulapai Gas N Grub Justus Schoppmann 2023</div>
         <div>
-            <img src="logo.png" alt="">
+          Haulapai Gas N Grub Justus Schoppmann 2023
         </div>
-        <div>
-            <a href="site-plan.html">Site Plan</a>
-            <div>
-                <a href="index.html">Home</a>
-            </div>
-            <div>
-                <a href="tel:928-718-8879">Contact</a>
-            </div>
+        <div class="foot-logo">
+          <img class="footer-logo" src="logo.png" alt="">
         </div>
-    </footer>
+        <div class="footer-links">
+          <a href="site-plan.html">Site Plan</a>
+          <a href="index.html">Home</a>
+          <a href="tel:928-718-8879">Contact</a>
+        </div>
+      </footer>
 
-    <script>
+    <!-- <script>
         var modal = document.getElementById("myModal");
         var btn = document.getElementById("myBtn");
         var span = document.getElementsByClassName("close")[0];
@@ -182,6 +147,21 @@
             modal.style.display = "none";
           }
         }
+        </script> -->
+        <script>
+            function showSelected(drink) {
+                // Hide all selected divs
+                var selectedDivs = document.querySelectorAll('.selected');
+                selectedDivs.forEach(function(div) {
+                    div.style.display = 'none';
+                });
+    
+                // Show the selected div
+                var selectedDiv = document.getElementById(drink + 'Selected');
+                if (selectedDiv) {
+                    selectedDiv.style.display = 'flex';
+                }
+            }
         </script>
 </body>
 </html>

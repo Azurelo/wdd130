@@ -83,6 +83,7 @@ a:hover {
     object-fit: cover; 
     padding: 0;
     margin: 0;
+    border-bottom: black 2px solid;
 }
   
 .info {
@@ -97,7 +98,7 @@ a:hover {
 }
   
 h2{
-    color: #333; 
+    color: black; 
     text-align: center;
 }
 h3{
@@ -109,33 +110,18 @@ p {
     color: #666; 
     font-family: 'Lora', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
-.gas-container {
-    display: flex;
-    justify-content: space-around; 
-    gap: 20px; 
-    width: 80%;
-    margin: auto;
+.page-title{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 3em;
 }
+
 .phone{
    height: 0px;
 }
-.gas-card {
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 8px;
-    width: 25%;
-    max-height: 100%;
-    text-align: center;
-  }
-  
-.gas-card img {
-    max-width: 100%;
-    max-height: 100%;
-    height: auto; 
-    margin-bottom: 10px;
-  }
 
 .subpages {
     display: flex;
@@ -245,7 +231,7 @@ footer div{
     background-color: white; 
     color: black
   }
-.modal {
+/* .modal {
     text-align: center;
     display: none; 
     position: fixed; 
@@ -280,7 +266,59 @@ footer div{
     color: #000;
     text-decoration: none;
     cursor: pointer;
-  }
+  } */
+
+  .sodas {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    border: black 2px solid;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.sodas div {
+    flex: 1;
+    margin-right: 0; 
+    overflow: hidden; 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sodas div img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; 
+    border-radius: 10px;
+}
+
+.selected{
+    color: white;
+    display: none;
+    width: 80%;
+    margin: 0 auto;
+    max-height: 200px;
+    background-color: white;
+    border: black 2px solid;
+    border-radius: 0px 0px 5px 5px;
+}
+.selected ul li:first-child {
+    color: red;
+}
+@media only screen and (max-width: 1367px){
+    .selected{
+        font-size: small;
+        margin-bottom: 100px;
+      }
+      .selected img{
+        max-width:120px;
+      }
+    .selected ul li{
+        margin: auto 5px;
+      }
+}
 @media only screen and (max-width: 1200px){
     .subpage-card h3 {
         color: red;
