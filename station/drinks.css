@@ -83,7 +83,7 @@ a:hover {
     object-fit: cover; 
     padding: 0;
     margin: 0;
-    border-bottom: #000052 2px solid;
+    border-bottom: black 2px solid;
 }
   
 .info {
@@ -274,7 +274,7 @@ footer div{
     width: 80%;
     margin: 0 auto;
     background-color: #fff;
-    border: #000052 2px solid;
+    border: black 2px solid;
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -301,7 +301,7 @@ footer div{
     margin: 0 auto;
     max-height: 200px;
     background-color: white;
-    border: #000052 2px solid;
+    border: black 2px solid;
     border-radius: 0px 0px 5px 5px;
 }
 .selected ul li:first-child {
