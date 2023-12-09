@@ -4,130 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snacks</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="snacks.css">
 </head>
 <body>
     <header>
         <ul>
-            <div>
-                <img src="logo.png" alt="logo" class="logo">
-            </div>
-            <div>
+            <li><img src="logo.png" alt="logo" class="logo"> </li>
+            <li>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="drinks.html">Drinks</a></li>
                     <li><a href="snacks.html">Snacks</a></li>
                 </ul>
-            </div>
-            <div>
-                &#128222
-            </div>
+            </li>
+            <li>
+                <a href="tel:928-718-8879"><div class="phone">&#128222;</div></a>
+            </li>
         </ul>
-        <div>
-            <h1>Snacks</h1>
-            <img src="./images/banner.jpg" alt="snacks">
+        <div class="hero-container">
+            <img class='hero' src="./images/banner.jpg" alt="">
+            <h3 class="page-title">Snacks</h3>
         </div>
     </header>
     <main>
-        <section>
-            This section is perfect for helping you plan ahead and easily find your favorite snack. Our snacks menu is thoughtfully curated to cater to a wide range of tastes and preferences. Whether you're a fan of savory treats like chips and pretzels or you have a sweet tooth that craves candy and chocolate, we've got you covered. For those seeking healthier options, we offer a selection of nuts, dried fruits, and protein bars. Need a quick energy boost during your road trip? Grab one of our freshly made sandwiches. Our commitment to variety means you'll always find something to satisfy your cravings.
+        <section class="info">
+            <h2>Info</h2>
+            <p>This section is perfect for helping you plan 
+                ahead and easily find your favorite snack. Our 
+                snacks menu is thoughtfully curated to cater to 
+                a wide range of tastes and preferences. Whether 
+                you're a fan of savory treats like chips and 
+                pretzels or you have a sweet tooth that craves 
+                candy and chocolate, we've got you covered. 
+                For those seeking healthier options, we offer 
+                a selection of nuts, dried fruits, and protein 
+                bars. Need a quick energy boost during your road
+                 trip? Grab one of our freshly made sandwiches. 
+                 Our commitment to variety means you'll always 
+                 find something to satisfy your cravings.</p>
         </section>
         <section>
             <h2>Sunflower Seeds</h2>
-            <div>
-            <div><img src="./images/spitz.jpg" alt="coke"></div>
-            <div><img src="./images/david.jpg" alt=""></div>
+            <div class="snacks">
+                <div><img src="./images/spitz.jpg" alt="spitz" onclick="showSelected('spitz')"></div>
+                <div><img src="./images/david.jpg" alt="davids" onclick="showSelected('davids')"></div>
             </div>
-            <div class="selected">
+            <div id="spitzSelected" class="selected">
                 <img src="images/spitz.jpg" alt="">
                 <ul>
-                    Spitz Flavors
-                    <li>
-                        Cracked Pepper
-                    </li>
-                    <li>
-                        Salted
-                    </li>
-                    <li>
-                        Dill Pickle
-                    </li>
-                    <li>
-                        Bacon
-                    </li>
+                    <li>Flavors</li>
+                    <li>Cracked Pepper<li>
+                    <li> Dill Pickle</li>
+                    <li>Bacon</li>
                 </ul>
             </div>
-            <div class="selected">
+            <div id="davidsSelected" class="selected">
                 <img src="./images/david.jpg" alt="">
                 <ul>
-                    Davids Flavors
-                    <li>
-                        Peppered
-                    </li>
-                    <li>
-                        Chili Lime
-                    </li>
-                    <li>
-                        Sugar Cookie
-                    </li>
+                    <li>Flavors</li>
+                    <li> Peppered</li>
+                    <li>Chili Lime</li>
+                    <li> Sugar Cookie</li>
                 </ul>
             </div>
         </section>
         <section>
             <h2>Chips</h2>
-            <div>
-            <div><img src="./images/lays.jpg" alt="monster"></div>
-            <div><img src="./images/pringles.jpg" alt=""></div>
+            <div class="snacks">
+                <div><img src="./images/lays.jpg" alt="lays" onclick="showSelected('lays')"></div>
+                <div><img src="./images/pringles.jpg" alt="pringles" onclick="showSelected('pringles')"></div>
             </div>
-            <div class="selected">
+            <div id="laysSelected"  class="selected">
                 <img src="images/lays.jpg" alt="">
                 <ul>
-                    Lays Flavors
-                    <li>
-                        Sour Cream & Onion
-                    </li>
-                    <li>
-                        Barbeque
-                    </li>
-                    <li>
-                        Flamin Hot
-                    </li>
-                    <li>
-                        Limon
-                    </li>
+                    <li>Flavors</li>
+                    <li> Sour Cream</li>
+                    <li> BBQ</li>
+                    <li>Flamin Hot</li>
+                    <li>Limon</li>
                 </ul>
             </div>
-            <div class="selected">
+            <div id="pringlesSelected"  class="selected">
                 <img src="./images/pringles.jpg" alt="">
                 <ul>
-                    Pringles Flavors
-                    <li>
-                        Salt and Vinegar
-                    </li>
-                    <li>
-                        BBQ
-                    </li>
-                    <li>
-                        Sour Cream & Onion
-                    </li>
+                    <li>Flavors</li>
+                    <li>Salt and Vinegar</li>
+                    <li> BBQ</li>
+                    <li>Sour Cream & Onion</li>
                 </ul>
             </div>
 
         </section>
     </main>
     <footer>
-        <div>Haulapai Gas N Grub Justus Schoppmann 2023</div>
         <div>
-            <img src="logo.png" alt="">
+          Haulapai Gas N Grub Justus Schoppmann 2023
         </div>
-        <div>
-            <a href="site-plan.html">Site Plan</a>
-            <div>
-                <a href="index.html">Home</a>
-            </div>
-            <div>
-                <a href="tel:928-718-8879">Contact</a>
-            </div>
+        <div class="foot-logo">
+          <img class="footer-logo" src="logo.png" alt="">
         </div>
-    </footer>
+        <div class="footer-links">
+          <a href="site-plan.html">Site Plan</a>
+          <a href="index.html">Home</a>
+          <a href="tel:928-718-8879">Contact</a>
+        </div>
+      </footer>
+        <script>
+            function showSelected(snack) {
+                // Hide all selected divs
+                var selectedDivs = document.querySelectorAll('.selected');
+                selectedDivs.forEach(function(div) {
+                    div.style.display = 'none';
+                });
+    
+                // Show the selected div
+                var selectedDiv = document.getElementById(snack + 'Selected');
+                if (selectedDiv) {
+                    selectedDiv.style.display = 'flex';
+                }
+            }
+        </script>
 </body>
 </html>
