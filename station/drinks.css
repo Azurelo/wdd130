@@ -336,3 +336,71 @@ footer div{
         line-height: 100px;
       }
 }
+@media only screen and (max-width: 800px) {
+    body {
+      grid-template: auto auto 200px / 1fr;
+    }
+    .page-title{
+        display: none;
+    }
+    ul {
+      flex-direction: column;
+      text-align: center;
+    }
+    .nav{
+      border-bottom:100px;
+  
+    }
+    li {
+      margin: 10px 0;
+    }
+  
+    .logo {
+      margin-left: 0;
+    }
+  
+    header a {
+      margin-right: 0;
+    }
+  
+    .hero {
+      max-height: 300px;
+    }
+  
+    .info {
+      display: none;
+      width: 70%;
+    }
+  
+    .gas-container,
+    .subpages {
+      width: 100%;
+      flex-direction: column;
+    }
+  
+    .gas-card,
+    .subpage-card {
+      width: 70%;
+      margin: auto;
+    }
+    .phone{
+        display:none;
+      }
+    .subpage-card h3 {
+      line-height: 100px;
+    }
+  
+    footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    footer div {
+      width: 100%;
+    }
+  
+    .foot-logo {
+      margin: 10px 0;
+      width: 10%;
+    }
+  }

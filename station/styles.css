@@ -278,14 +278,16 @@ footer div{
   body {
     grid-template: auto auto 200px / 1fr;
   }
-
   ul {
     flex-direction: column;
     text-align: center;
   }
-  .nav{
-    border-bottom:100px;
-
+  .phone{
+    display:none;
+  }
+  .hero-container{
+    border-top: 50px;
+    max-height: auto;
   }
   li {
     margin: 10px 0;
